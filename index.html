@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chaos Opportunity</title>
+  <style>
+    body {
+      margin: 0;
+      background: #e9edf2;
+      font-family: Arial, sans-serif;
+    }
+
+    .poster {
+      position: relative;
+      width: 420px;
+      height: 748px;
+      margin: 24px auto;
+      overflow: hidden;
+      background: #fff;
+      color: #090909;
+    }
+
+    .right-shape {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 150%;
+      height: 150%;
+      background: #090909;
+      transform: rotate(30deg);
+      transform-origin: top left;
+    }
+
+    .top-band {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 120%;
+      height: 16%;
+      background: #090909;
+      transform: rotate(30deg);
+      transform-origin: top left;
+    }
+
+    .bottom-band {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 140%;
+      height: 15%;
+      background: #fff;
+      transform: rotate(30deg);
+      transform-origin: top left;
+    }
+
+    h1, p {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .first-phrase, .second-phrase {
+      position: absolute;
+      font-size: 42px;
+      line-height: 1.1;
+      transform: rotate(30deg);
+      transform-origin: top left;
+    }
+
+    .first-phrase {
+      left: 8%;
+      top: 6%;
+      width: 79%;
+      color: #fff;
+    }
+
+    .second-phrase {
+      left: 37%;
+      top: 66%;
+      width: 70%;
+    }
+
+    .emphasis {
+      display: block;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .first-phrase .emphasis {
+      text-align: right;
+    }
+
+    .book, .author {
+      position: absolute;
+      font-size: 20px;
+      transform: rotate(-60deg);
+      transform-origin: top left;
+    }
+
+    .book {
+      left: 72%;
+      top: 20%;
+    }
+
+    .author {
+      left: 14%;
+      top: 89%;
+      color: #fff;
+    }
+
+    @media (max-width: 460px) {
+      .poster {
+        width: 92vw;
+        height: 164vw;
+      }
+
+      .first-phrase, .second-phrase {
+        font-size: 9vw;
+      }
+      .emphasis {
+        font-size: 5vw;
+      }
+
+      .book, .author {
+        font-size: 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="right-shape" aria-hidden="true"></div>
+    <div class="top-band" aria-hidden="true"></div>
+    <div class="bottom-band" aria-hidden="true"></div>
+    <h1>
+      <span class="first-phrase">In the midst of <span class="emphasis">CHAOS</span></span>
+      <span class="second-phrase">there is also <span class="emphasis">OPPORTUNITY</span></span>
+    </h1>
+    <p class="book">Art of War</p>
+    <p class="author">Sun-Tzu</p>
+  </div>
+</body>
+</html>
